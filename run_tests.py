@@ -1,5 +1,7 @@
-import unittest
-from tests.homework.d_repetition import tests_repetition #made change for test
+# run_tests.py
 
-suite = unittest.TestLoader().loadTestsFromModule(tests_repetition) # made change for test
-unittest.TextTestRunner().run(suite)
+import unittest
+from tests.homework.h_strings import tests_strings
+
+suite = unittest.TestLoader().loadTestsFromModule(tests_strings)
+unittest.TextTestRunner(verbosity=2).run(suite)
